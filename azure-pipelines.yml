@@ -6,7 +6,7 @@ steps:
 - task: Ant@1
   displayName: 'Ant  build.xml'
   inputs:
-    buildFile: '$(Parameters.antBuildFile)'
+    buildFile: 'build.xml'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
